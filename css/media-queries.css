@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1199px) {
+.we_card{
+    margin: 15px;
+}
+    .card{
+        width: 100%;
+    }
+        .card{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .card{
+        width: 100%!important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .we_card.row{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 576px) {
+
+}
+@media only screen and (max-width: 375px) {
+
+}
+@media only screen and (max-width: 360px) {
+
+}
+@media only screen and (max-width: 320px) {
+
+}

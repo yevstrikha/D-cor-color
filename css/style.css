@@ -11,6 +11,18 @@ a {
 body {
   overflow-x: hidden; }
 
+h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px; }
+
+h4 {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px; }
+
 h5 {
   margin-bottom: 60px;
   padding-top: 10px;
@@ -50,9 +62,12 @@ header {
   header .item_top {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     background-color: #fff;
     opacity: 0.9;
-    padding: 37px 33px;
+    padding: 34px 30px;
+    max-width: 480px;
+    width: 100%;
     border-radius: 20px;
     margin-bottom: 98px; }
     header .item_top img {
@@ -97,13 +112,21 @@ header {
 .why_we {
   position: relative;
   background-image: url(../images/dots.svg);
-  background-repeat: repeat-y, repeat-x;
-  padding: 120px 0; }
-  .why_we h5 {
+  background-repeat: repeat-y;
+  padding: 60px 0; }
+  .why_we .row_card {
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    margin: 0 10px; }
+  .why_we .row {
+    justify-content: center; }
+  .why_we h2 {
     position: relative;
     z-index: 1;
     color: white;
-    margin-left: 95px; }
+    margin-left: 95px;
+    margin-bottom: 65px; }
   .why_we .shadow {
     position: absolute;
     width: 100%;
@@ -111,5 +134,100 @@ header {
     bottom: 0;
     background-color: #4C6071;
     opacity: 0.95; }
+
+.card {
+  border-radius: 20px;
+  padding: 50px 30px; }
+  .card .card-body {
+    padding: 0; }
+    .card .card-body h3 {
+      margin-top: 50px;
+      margin-bottom: 10px; }
+
+.card-img-top {
+  display: inline-block;
+  margin: auto;
+  max-height: 62px;
+  max-width: 62px; }
+
+.portfolio {
+  padding-bottom: 177px; }
+  .portfolio img {
+    width: 100%; }
+  .portfolio h5 {
+    margin-top: 65px;
+    margin-bottom: 50px;
+    margin-left: 100px; }
+  .portfolio .owl-carousel {
+    position: relative;
+    padding-top: 50px; }
+    .portfolio .owl-carousel h3 {
+      margin-top: 20px;
+      margin-bottom: 10px; }
+  .portfolio a {
+    margin: auto;
+    display: block;
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 0px 0px 166px rgba(0, 0, 0, 0.2), 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 48px;
+    max-width: 255px;
+    width: 100%;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px; }
+    .portfolio a:hover {
+      background: linear-gradient(90deg, #6488D4 0%, #193F50 100%);
+      box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      color: white; }
+
+.price {
+  background-image: url(../images/dots.svg);
+  background-repeat: repeat-y;
+  padding-bottom: 90px;
+  padding-top: 60px;
+  position: relative; }
+  .price .price_shade {
+    position: absolute;
+    background-color: #4C6071;
+    width: 100%;
+    top: 0;
+    bottom: 90px;
+    opacity: 0.9; }
+  .price .price_text, .price .form_main {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px; }
+  .price .form_text {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+  .price .form_form {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px 30px;
+    background-color: #4C6071;
+    border-radius: 20px; }
+    .price .form_form .form-check {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      margin-bottom: 10px; }
+    .price .form_form img {
+      display: inline-block;
+      border-radius: 20px;
+      max-width: 610px;
+      width: 100%; }
+  .price .btn-toolbar {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */

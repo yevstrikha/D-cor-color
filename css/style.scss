@@ -10,6 +10,18 @@ a{
 body{
   overflow-x: hidden;
 }
+h3{
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+h4{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
 h5{
   margin-bottom: 60px;
   padding-top: 10px;
@@ -58,9 +70,12 @@ header{
   .item_top{
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     background-color: #fff;
     opacity: 0.9;
-    padding: 37px 33px;
+    padding: 34px 30px;
+    max-width: 480px;
+    width: 100%;
     border-radius: 20px;
     margin-bottom: 98px;
     img{
@@ -95,7 +110,6 @@ header{
   }
   .col-5{
     max-width: 385px;
-    //padding-right: 50px;
      p{
       font-family: Roboto;
       font-weight: 300;
@@ -115,13 +129,23 @@ header{
 .why_we{
   position: relative;
   background-image: url(../images/dots.svg);
-  background-repeat: repeat-y, repeat-x;
-  padding: 120px 0;
-  h5{
+  background-repeat: repeat-y;
+  padding: 60px 0;
+  .row_card{
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    margin: 0 10px;}
+  .row{
+    justify-content: center;
+  }
+
+  h2{
     position: relative;
     z-index: 1;
     color: white;
     margin-left: 95px;
+    margin-bottom: 65px;
   }
   .shadow{
     position: absolute;
@@ -132,11 +156,119 @@ header{
     opacity: 0.95;
   }
   }
-//.we_card{
-//  display: inline-block;
-//  padding: 50px 30px;
-//  position: relative;
-//  z-index: 1;
-//  background-color: #fff;
-//  border: solid 1px red;
-//}
+.card{
+  border-radius: 20px;
+  padding: 50px 30px;
+  .card-body{
+    padding: 0;
+    h3{
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.card-img-top{
+  display: inline-block;
+  margin: auto;
+  max-height: 62px;
+  max-width: 62px;
+}
+
+                    //portfolio
+.portfolio{
+  padding-bottom: 177px;
+  img{
+    width: 100%;
+
+  }
+  h5{
+    margin-top: 65px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+  }
+  .owl-carousel{
+    position: relative;
+    padding-top: 50px;
+    h3{
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  a{ margin: auto;
+    display: block;
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 0px 0px 166px rgba(0, 0, 0, 0.2), 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 48px;
+    max-width: 255px;
+    width: 100%;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    &:hover{
+      background: linear-gradient(90deg, #6488D4 0%, #193F50 100%);
+      box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      color: white;
+    }
+  }
+}
+
+
+                    //price
+.price{
+  background-image: url(../images/dots.svg);
+  background-repeat: repeat-y;
+  padding-bottom: 90px;
+  padding-top: 60px;
+  position: relative;
+  .price_shade{
+    position: absolute;
+    background-color: #4C6071;
+    width: 100%;
+    top: 0;
+    bottom: 90px;
+    opacity: 0.9;
+  }
+  .price_text, .form_main{
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  .form_text{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .form_form{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px 30px;
+    background-color: #4C6071;
+    border-radius: 20px;
+    .form-check{
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    img{
+      display: inline-block;
+      border-radius: 20px;
+      max-width: 610px;
+      width: 100%;
+    }
+  }.btn-toolbar{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+     }
+}
+
