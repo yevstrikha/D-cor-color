@@ -32,10 +32,25 @@ h5 {
   font-size: 24px;
   line-height: 31px; }
 
+@keyframes slide-up {
+  from {
+    opacity: .25;
+    line-height: 500px; }
+  to {
+    opacity: 1;
+    line-height: 73px; } }
+.slide-up {
+  animation: slide-up 2s; }
+
 header {
   background-image: url(../images/header.jpg);
   background-size: cover;
   padding-bottom: 34px; }
+  header .navbar-dark .navbar-text a:hover {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 10px; }
   header .nav-link:hover {
     color: green; }
   header .container-fluid {
@@ -52,7 +67,7 @@ header {
     color: white; }
   header .navbar-dark .navbar-text {
     color: white; }
-  header .navbar-text a {
+  header .navbar-dark a {
     margin-left: 20px; }
   header h1 {
     font-family: GothicA1, sans-serif;
@@ -157,18 +172,26 @@ header {
 
 .portfolio {
   padding-bottom: 177px; }
+  .portfolio .owl-nav {
+    position: absolute;
+    top: -15%;
+    right: 0; }
   .portfolio img {
     width: 100%; }
   .portfolio h5 {
     margin-top: 65px;
     margin-bottom: 50px;
-    margin-left: 100px; }
+    margin-left: 100px;
+    color: black; }
   .portfolio .owl-carousel {
     position: relative;
     padding-top: 50px; }
     .portfolio .owl-carousel h3 {
+      color: black;
       margin-top: 20px;
       margin-bottom: 10px; }
+    .portfolio .owl-carousel h4 {
+      color: black; }
   .portfolio a {
     margin: auto;
     display: block;
@@ -208,6 +231,8 @@ header {
     background-color: #fff;
     border-radius: 20px;
     margin-bottom: 10px; }
+    .price .price_text h3, .price .form_main h3 {
+      color: black; }
   .price .form_text {
     position: relative;
     display: flex;
@@ -215,6 +240,7 @@ header {
     margin-bottom: 20px; }
   .price .form_form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 50px 30px 30px;
     background-color: #4C6071;
@@ -273,11 +299,14 @@ input {
     width: 100%;
     margin-bottom: 20px; }
   .catalog h5 {
+    margin-top: 150px;
     margin-left: 100px;
     margin-bottom: 52px;
     text-align: left; }
   .catalog h3 {
+    color: black;
     text-transform: uppercase;
+    text-align: left;
     margin-bottom: 40px; }
   .catalog a {
     display: inline-block;
@@ -323,7 +352,7 @@ input {
     align-items: center; }
     .reviews_main .reviews .owl-nav {
       position: absolute;
-      top: -30%;
+      top: -22%;
       right: 0; }
   .reviews_main .owl-nav {
     margin-right: 60px; }
@@ -354,22 +383,40 @@ iframe {
 .owl-next {
   margin: 0 30px; }
 
-.owl-nav .owl-next:after {
+.portfolio .owl-nav .owl-next:after {
   content: "\f061";
   font-weight: 900;
-  color: white;
+  color: black;
   font-family: "Font Awesome 5 Free"; }
 
-.owl-nav .owl-prev {
+.portfolio .owl-nav .owl-prev {
   transform: rotate(180deg); }
 
-.owl-nav .owl-prev:before {
+.portfolio .owl-nav .owl-prev:before {
+  content: "\f061";
+  font-weight: 900;
+  color: black;
+  font-family: "Font Awesome 5 Free"; }
+
+.portfolio .owl-nav span {
+  display: none; }
+
+.reviews_main .owl-nav .owl-next:after {
   content: "\f061";
   font-weight: 900;
   color: white;
   font-family: "Font Awesome 5 Free"; }
 
-.owl-nav span {
+.reviews_main .owl-nav .owl-prev {
+  transform: rotate(180deg); }
+
+.reviews_main .owl-nav .owl-prev:before {
+  content: "\f061";
+  font-weight: 900;
+  color: white;
+  font-family: "Font Awesome 5 Free"; }
+
+.reviews_main .owl-nav span {
   display: none; }
 
 .discussion {
@@ -377,16 +424,15 @@ iframe {
   .discussion img {
     width: 100%;
     margin-bottom: 200px; }
-  .discussion .col-5 {
+  .discussion .col-md-5 {
     padding-right: 100px; }
-    .discussion .col-5 h5 {
+    .discussion .col-md-5 h5 {
       margin-bottom: 20px; }
   .discussion .form-control {
     border: none;
     text-align: left;
     border-bottom: solid 1px black;
-    border-radius: 0;
-    padding-right: 100px; }
+    border-radius: 0; }
   .discussion .btn {
     display: inline-block;
     margin-top: 30px;
